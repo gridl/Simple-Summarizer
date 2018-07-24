@@ -16,7 +16,7 @@ from collections import defaultdict
 def main():
     """ Drive the process from argument to output """ 
     args = parse_arguments()
-    print(args)
+
     content = read_file(args.filepath)
     content = sanitize_input(content)
 
@@ -29,11 +29,8 @@ def parse_arguments():
     """ Parse command line arguments """ 
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='File name of text to summarize')
-    parser.add_argument('-l', '--length', default='en', help='Number of sentences to return')
+    parser.add_argument('-l', '--length', default=4, help='Number of sentences to return')
     args = parser.parse_args()
-
-    if not args.length.isdigit():
-        args.length = 4
 
     return args
 
