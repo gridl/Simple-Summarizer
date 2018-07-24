@@ -1,13 +1,13 @@
 # Simple-Summarizer
-A simple summarizer in Python 
-
-## About
-This is an extremely basic summarizer that uses the NLTK for Python to summarize the contents of a plain text file it is given. The sanitation is not very smart yet so it can only handle basically plain text. It accepts a required parameter of a file path to the file that needs to be summarized and an optional length paramter for how many sentences need to be in the final summary; the default being four. 
+A simple summarizer in Python using the NLTK library.
 
 ## Requirements
-* Python 3.X
+* Python 3.2+
 * NLTK Library
 * NLTK Corpus 
+
+## Tutorial
+This code is part of the tutorial [Write a Simple Summarizer with Python](https://medium.com/@jodylecompte/write-a-simple-summarizer-in-python-e9ca6138a08e).
 
 ## Credit
 News article by Voice of America News Used for Sample Data: https://projects.voanews.com/greenland/ 
